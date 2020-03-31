@@ -57,8 +57,7 @@ def make_weights_for_balanced_classes(images, nclasses):
         weight[idx] = weight_per_class[val[1]]
 
     return weight
-
-
+    
 def make_data_loader(config):
 
     INPUT_SIZE = config['INPUT_SIZE']
@@ -86,5 +85,5 @@ def make_data_loader(config):
 
     NUM_CLASS = len(train_loader.dataset.classes)
     print("Number of Training Classes: {}".format(NUM_CLASS))
-
+    
     return train_loader, NUM_CLASS

@@ -1,8 +1,5 @@
 nohup: ignoring input
 ============================================================
-Overall Configurations:
-{'SEED': 2020, 'DATA_ROOT': '/home/data/CASIA/CASIA-WebFace', 'MODEL_ROOT': './checkpoints', 'LOG_ROOT': './logs', 'BACKBONE_NAME': 'IR_SE_50', 'HEAD_NAME': 'ArcFace', 'LOSS_NAME': 'Focal', 'INPUT_SIZE': [112, 112], 'RGB_MEAN': [0.5, 0.5, 0.5], 'RGB_STD': [0.5, 0.5, 0.5], 'EMBEDDING_SIZE': 512, 'BATCH_SIZE': 512, 'DROP_LAST': True, 'LR': 0.1, 'NUM_EPOCH': 125, 'WEIGHT_DECAY': 0.0005, 'MOMENTUM': 0.9, 'STAGES': [35, 65, 95], 'DEVICE': device(type='cuda', index=0), 'MULTI_GPU': True, 'GPU_ID': [0, 1, 2, 3], 'PIN_MEMORY': True, 'NUM_WORKERS': 0}
-============================================================
 Number of Training Classes: 10575
 ============================================================
 Backbone(
@@ -37551,3 +37548,25 @@ Epoch 111/125 Batch 97880/111125	Training Loss 0.4436 (0.6501)	Training Prec@1 9
 ============================================================
 Epoch 111/125 Batch 97888/111125	Training Loss 1.2594 (0.6609)	Training Prec@1 92.188 (94.756)	Training Prec@5 93.164 (95.368)
 ============================================================
+=======
+prefix ./checkpoints/mobilefacenet-arcface/model
+rand_mirror True
+Number of images in train: 455594
+num_classes 10576
+Mon Mar 16 10:33:42 2020 train epoch 0 iter 0 loss 24.545133590698242 acc 0.0
+Mon Mar 16 10:33:49 2020 train epoch 0 iter 20 loss 24.417072296142578 acc 0.0
+Mon Mar 16 10:33:59 2020 train epoch 0 iter 40 loss 24.142101287841797 acc 0.0
+Mon Mar 16 10:34:09 2020 train epoch 0 iter 60 loss 23.834917068481445 acc 0.0
+Mon Mar 16 10:34:20 2020 train epoch 0 iter 80 loss 23.46210289001465 acc 0.0
+Mon Mar 16 10:34:30 2020 train epoch 0 iter 100 loss 23.416452407836914 acc 0.0
+Mon Mar 16 10:34:40 2020 train epoch 0 iter 120 loss 23.002948760986328 acc 0.0
+Mon Mar 16 10:34:50 2020 train epoch 0 iter 140 loss 23.00661849975586 acc 0.0
+Mon Mar 16 10:35:00 2020 train epoch 0 iter 160 loss 22.281803131103516 acc 0.0
+Mon Mar 16 10:35:10 2020 train epoch 0 iter 180 loss 22.311960220336914 acc 0.0
+Mon Mar 16 10:35:19 2020 train epoch 0 iter 200 loss 22.204360961914062 acc 0.0
+Mon Mar 16 10:35:29 2020 train epoch 0 iter 220 loss 21.89094352722168 acc 0.0
+Mon Mar 16 10:35:39 2020 train epoch 0 iter 240 loss 21.531970977783203 acc 0.0
+Mon Mar 16 10:35:48 2020 train epoch 0 iter 260 loss 21.839725494384766 acc 0.0
+Mon Mar 16 10:35:57 2020 train epoch 0 iter 280 loss 21.229206085205078 acc 0.0
+Mon Mar 16 10:36:07 2020 train epoch 0 iter 300 loss 21.347814559936523 acc 0.0
+Mon Mar 16 10:36:16 2020 train epoch 0 iter 320 loss 21.240985870361328 acc 0.0

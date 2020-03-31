@@ -3,7 +3,6 @@ import torch.nn as nn
 import math
 import torch.nn.functional as F
 
-
 class CosFace(nn.Module):
     def __init__(self, in_features, out_features, s=30.0, m=0.40):
         super().__init__()
@@ -83,15 +82,15 @@ class ArcFace1(nn.Module):
 
 class ArcFace(nn.Module):
     r"""Implement of ArcFace (https://arxiv.org/pdf/1801.07698v1.pdf):
-        Args:
-            in_features: size of each input sample
-            out_features: size of each output sample
-            device_id: the ID of GPU where the model will be trained by model parallel. 
-                       if device_id=None, it will be trained on CPU without model parallel.
-            s: norm of input feature
-            m: margin
-            cos(theta+m)
-        """
+    Args:
+        in_features: size of each input sample
+        out_features: size of each output sample
+        device_id: the ID of GPU where the model will be trained by model parallel. 
+                    if device_id=None, it will be trained on CPU without model parallel.
+        s: norm of input feature
+        m: margin
+        cos(theta+m)
+    """
     def __init__(self, in_features, out_features, device_id, s = 64.0, m = 0.50, easy_margin = False):
         super(ArcFace, self).__init__()
         self.in_features = in_features

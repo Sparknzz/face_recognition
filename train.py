@@ -12,6 +12,7 @@ from tensorboardX import SummaryWriter
 from config import configurations
 from models.model_irse import IR_SE_50
 from utils import *
+
 os.environ['CUDA_VISIBLE_DEVICES'] = '0, 1'
 
 if __name__ == "__main__":
@@ -65,12 +66,7 @@ if __name__ == "__main__":
     lfw, lfw_issame = get_val_data(EVAL_ROOT)
 
     # ======= model & loss & optimizer =======#
-    BACKBONE_DICT = {'IR_50': IR_50(INPUT_SIZE),
-                     'IR_101': IR_101(INPUT_SIZE),
-                     'IR_152': IR_152(INPUT_SIZE),
-                     'IR_SE_50': IR_SE_50(INPUT_SIZE),
-                     'IR_SE_101': IR_SE_101(INPUT_SIZE),
-                     'IR_SE_152': IR_SE_152(INPUT_SIZE)}
+    BACKBONE_DICT = {'IR_SE_50': IR_SE_50(INPUT_SIZE)}
 
     BACKBONE = BACKBONE_DICT[BACKBONE_NAME]
     print("=" * 60)

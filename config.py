@@ -28,9 +28,6 @@ default.frequent = 20
 default.end_epoch = 200
 default.ckpt = 3
 
-
-
-
 # new version 
 import torch
 configurations = {
